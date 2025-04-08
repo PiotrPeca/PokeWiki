@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pokemon Wikipedia">
+    <meta name="author" content="Piotr Peca">
+    <title>Baza pokemonów</title>
+</head>
+<body style="background-color: #006aff;">
+
+    <h1 style="text-align: center; color: #006aff; background-color: yellow;">
+        PokeWiki
+    </h1>
+    
+    <br>
+    <br>
+
+    <div>
+        <h3>Filtry:</h3>
+        <form action="/action_page.php" method="get">
+            <table style="background-color: blue;">
+                <tr>
+                    <th colspan="6">
+                        <div style="float: left;">
+                            <label for="type" style="color: white;">Typ:</label>
+                            <select id="type" name="type">
+                                <option value="Typ1">Typ1</option>
+                                <option value="Typ3">Typ2</option>
+                                <option value="Typ2">Typ3</option>
+                            </select>
+                        </div>
+                        <div style="float: left;">
+                            <label for="species" style="color: white;">Gatunek:</label>
+                            <select id="species" name="species">
+                                <option value="Gatunek1">Gatunek1</option>
+                                <option value="Gatunek2">Gatunek2</option>
+                                <option value="Gatunek3">Gatunek3</option>
+                            </select>
+                        </div>
+                        <div style="float: left;">
+                            <label for="gender" style="color: white;">Płeć:</label>
+                            <select id="gender" name="gender">
+                                <option value="Mężczyzna">Mężczyzna</option>
+                                <option value="Kobieta">Kobieta</option>
+                                <option value="Pokemon (trans)">Pokemon (trans)</option>
+                            </select>
+                        </div>
+                        <div style="float: left;">
+                            <label for="location" style="color: white">Lokacja</label>
+                            <select id="location" name="location">
+                                <option value="Europa">Europa</option>
+                                <option value="Azja">Azja</option>
+                                <option value="Afryka">Afryka</option>
+                                <option value="Ameryka">Ameryka</option>
+                            </select>
+                        </div>
+                        <div style="float: right;">
+                            <input type="submit" value="Filtruj" style="border-radius: 15px; border: none;">
+                        </div>
+                    </th>
+                </tr>
+                <div style="clear: float;">
+                    <tr style="background-color: white">
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr style="background-color: white">
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                        <td><img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px"></td>
+                    </tr>
+                </div>
+            </table>
+        </form>
+    </div>
+
+    <br>
+
+    <div style="background-color: black; width: 300px; height: 50px; margin: auto">
+        <div style="background-color: yellow; width: 50px; height: 50px; float: left; text-align: center; vertical-align: middle; line-height: 50px; font-size: 35px;">&#11144;</div>
+        <div style="background-color: red; width: 50px; height: 50px; float: left; text-align: center; vertical-align: middle; line-height: 50px; font-size: 35px;">&#11164;</div>
+        <div style="background-color: white; width: 100px; height: 50px; margin: auto; float: left; text-align: center; vertical-align: middle; line-height: 50px; font-size: 35px;">1</div>
+        <div style="background-color: red; width: 50px; height: 50px; float: left; text-align: center; vertical-align: middle; line-height: 50px; font-size: 35px;">&#11166;</div>
+        <div style="background-color: yellow; width: 50px; height: 50px; float: left; text-align: center; vertical-align: middle; line-height: 50px; font-size: 35px;">&#11146;</div>
+    </div>
+</body>
+</html>

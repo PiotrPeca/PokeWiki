@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pokemon Wikipedia">
+    <meta name="author" content="Piotr Peca">
+    <title>Strona główna</title>
+</head>
+<body style="background-color: #006aff;">
+    
+    <h1 style="text-align: center; color: #006aff; background-color: yellow;">
+        PokeWiki
+    </h1>
+
+    <form action="/action_page.php" method="get" style="text-align: center;">
+            <input type="text" name ="search" placeholder="Wyszukaj pokemona:" required style="border-radius: 5px; border: none; padding:0.5%">
+            <input type="submit" value="Szukaj!" style="border-radius: 5px; border: none; padding:0.5%;">
+    </form>
+
+    <div style="float: left;">
+        <img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/103.png?raw=true" alt="Favourite pokemon" title="Author's favourite pokemon" width="300px">
+    </div>
+    
+    <div style="float: left;">
+        <h4>Na naszej stronie mamy informacje o:</h4>
+        <ol>
+            <li>Pokemonach</li>
+            <li>Statystykach</li>
+            <li>Umiejętnościach</li>
+            <li>Ewolucjach</li>
+            <li>Typach</li>
+            <li>Gatunkach</li>
+            <li>Itemach</li>
+            <li>Dźwiękach</li>
+        </ol>
+    </div>
+
+    <div style="clear: left;">
+        <a href="search.html">
+            <button style="background-color: #00c6f2; border-radius: 5px; border: none; padding:1%;">
+                Zobacz bazę pokemonów
+            </button>
+        </a>    
+    </div>
+</body>
+</html>
