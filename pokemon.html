@@ -6,65 +6,78 @@
     <meta name="author" content="Piotr Peca">
     <title>Pokemon</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 </head>
 <body>
-    <div style="text-align: center; color: #006aff; background-color: yellow;">
-        <a href="index.html" style="text-decoration:none;">
-            <h1>
-                PokeWiki
-            </h1>
-        </a>
+    <div class="container_header">
+        <div class="logo">
+            <a class="logo_link" href="index.html">
+                <h1>
+                    Poke Wiki
+                </h1>
+            </a>
+        </div>
+        <div class="div_browse">
+            <form class="form_browse" action="pokemon.html" method="get">
+                    <input class="search_pokemon" type="text" name ="search" placeholder="Wyszukaj pokemona:" required>
+                    <input class="search_pokemon" type="submit" value="Szukaj!">
+            </form>
+        </div>
     </div>
 
-    <form action="pokemon.html" method="get" style="text-align: center;">
-            <input type="text" name ="search" placeholder="Wyszukaj pokemona:" required style="border-radius: 5px; border: none; padding:0.5%">
-            <input type="submit" value="Szukaj!" style="border-radius: 5px; border: none; padding:0.5%;">
-    </form>
 
-    <div style="float: left;">
-        <img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/19.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px">
-    </div>
-    
-    <div style="float: left;">
-        <ul>
-            <h4>Informacje o wyszukanym pokemonie:</h4>
-            <li>Umiejętności</li>
-            <ul>
-                <li>chuje</li>
-                <li>muje</li>
-                <li>dzikie</li>
-                <li>węże</li>
-            </ul>
-            <li>Dźwięki</li>
-            <ul>
-                <li>
-                    <audio controls>
-                        <source src="https://github.com/PokeAPI/cries/raw/8584048df8f55ee1c436da23b378316e9d416a9b/cries/pokemon/latest/19.ogg">
-                        This browser does not support HTML5 audio
-                    </audio>
-                </li>
-                <li>
-                    <audio controls>
-                        <source src="https://github.com/PokeAPI/cries/raw/8584048df8f55ee1c436da23b378316e9d416a9b/cries/pokemon/latest/190.ogg">
-                        This browser does not support HTML5 audio
-                    </audio>
-                </li>
-            </ul>
-            <li>Itemy</li>
-            <ul>
-                <li>Item1</li>
-                <li>Item2</li>
-                <li>Item3</li>
-            </ul>
-            <li>Typ</li>
-            <li>Gatunek</li>
-            <li>Statystyki</li>
-            <li>Ewolucje</li>
-            <ul>
-                <li>Poziom 2</li>
-                <li>Poziom 3</li>
-            </ul>
-        </ol>
+    <div class="container_content">
+        <div class="box_pokemon_img">
+            <img class="pokemon_img" src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/25.png?raw=true" alt="Searched pokemon" title="Ratata" width="300px">
+        </div>
+
+        <div class="info_pokemon">
+            <div class="info_header">
+                <h4>Informacje o wyszukanym pokemonie:</h4>
+            </div>
+
+            <div class="info_statistics">
+                <ul>
+                    <li>Typ: Elektryczny</li>
+                    <li>Umiejętności:</li>
+                    <ul>
+                        <li>statyczność</li>
+                        <li>piorunochron</li>
+                    </ul>
+                    <li>Płeć: Mężczyzna</li>
+                    <li>Wzrost: 0.4m</li>
+                    <li>Waga: 6.0kg</li>
+                    <li>Dźwięki:</li>
+                    <ul>
+                        <li>
+                            <audio controls>
+                                <source src="https://github.com/PokeAPI/cries/raw/8584048df8f55ee1c436da23b378316e9d416a9b/cries/pokemon/latest/25.ogg">
+                                This browser does not support HTML5 audio
+                            </audio>
+                        </li>
+                    </ul>
+                    <li>Itemy:</li>
+                    <ul>
+                        <li>Kula Świetlna</li>
+                        <li>Jagoda</li>
+                    </ul>
+
+                    <li>Statystyki:</li>
+                    <ul>
+                        <li>HP: 35</li>
+                        <li>Atak: 50</li>
+                        <li>Obrona: 30</li>
+                        <li>Szybkość: 90</li>
+                    </ul>
+                    <li>Ewolucje:</li>
+                    <ul>
+                        <li>Poziom 1: Pichu</li>
+                        <li>Poziom 3: Raichu</li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -25,6 +25,8 @@ PokeWiki is a simple, responsive web application providing detailed information 
 ├── pokemon.html  
 ├── css/  
 │   └── styles.css  
+├── images/  
+│   └── ...  
 └── README.md
 ```
 
@@ -37,3 +39,5 @@ git clone https://github.com/your_username/pokewiki.git
 cd pokewiki
 open index.html
 ```
+
+or open website through **GitHub Pages**.

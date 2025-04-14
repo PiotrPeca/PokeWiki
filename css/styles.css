@@ -107,7 +107,7 @@ input[type=submit]:active {
     /* border: 5px solid black; */
 }
 
-.pokemon_img_img {
+.pokemon_img {
     width: 400px;
 }
 
@@ -133,6 +133,13 @@ input[type=submit]:active {
 }
 
 .info_list {
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.info_statistics {
+    column-count: 2;
+    
     margin: 10px;
     /* border: 5px solid black; */
 }
@@ -165,4 +172,9 @@ input[type=submit]:active {
 .database_button:active {
     color: #3f0398;
     background-color: #e5e50b;
+}
+
+li {
+    margin: 10px 0;
+    list-style-type: square;
 }
