@@ -1,0 +1,168 @@
+body {
+    background-image: url("../images/Background_2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    height: 850px;
+    flex-direction: column;
+
+    /* border: 5px solid black; */
+}
+
+.container_header {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    
+    margin: 10px;
+    /* border: 5px solid blue; */
+}
+
+.logo {
+    font-family: "Pokemon Solid", "consolas", sans-serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+    text-shadow: -5px 0 #3f0398, 0 5px #3f0398, 5px 0 #3f0398, 0 -5px #3f0398;
+    
+    /* border: 10px solid #fffb00; */
+}
+
+.logo_link {
+    text-decoration: none;
+} 
+
+.logo_link:link {
+    color: #e5e50b;
+}
+
+.logo_link:visited {
+    color: #e5e50b;
+}
+
+.logo_link:hover {
+    color: #d4d406;
+    text-shadow: -5px 0 #290262, 0 5px #290262, 5px 0 #290262, 0 -5px #290262;
+}
+
+.logo_link:active {
+    color: #3f0398;
+    text-shadow: -5px 0 #e5e50b, 0 5px #e5e50b, 5px 0 #e5e50b, 0 -5px #e5e50b;
+}
+
+.form_browse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+    margin-left: auto;
+    margin: 10px;
+
+    /* border: 5px solid red; */
+}
+
+.search_pokemon {
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 17px;
+    border-radius: 10px; 
+    border: 5px outset black;
+    box-shadow: 0px 0px 10px black;
+    padding: 3%;
+}
+
+input[type=submit] {
+    background-color: #fffb00;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-size: 17.5px;
+    background-color: #d4d406;
+}
+
+input[type=submit]:active {
+    color: #fffb00;
+    background-color: black;
+}
+
+.container_content {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin: 10px;
+    /* border: 5px solid blue; */
+}
+
+.box_pokemon_img {
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.pokemon_img_img {
+    width: 400px;
+}
+
+.info_pokemon {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 20px;
+    color: #e5e50b;
+
+    justify-content: space-evenly;
+
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.info_header {
+    text-align: center;
+
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.info_list {
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.info_show_database {
+    align-self: center;
+
+    margin: 10px;
+    /* border: 5px solid black; */
+}
+
+.database_button {
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 17px;
+    color: #e5e50b;
+    background-color: #3f0398;
+
+    border-radius: 10px; 
+    border: 5px outset #e5e50b;
+    box-shadow: 0px 0px 10px #3f0398;
+    padding: 3%;
+
+    cursor: pointer;
+}
+
+.database_button:hover {
+    font-size: 17.5px;
+}
+
+.database_button:active {
+    color: #3f0398;
+    background-color: #e5e50b;
+}
