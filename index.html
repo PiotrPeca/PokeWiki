@@ -5,46 +5,57 @@
     <meta name="description" content="Pokemon Wikipedia">
     <meta name="author" content="Piotr Peca">
     <title>Strona główna</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 </head>
-<body style="background-color: #006aff;">
-    
-    <div style="text-align: center; color: #006aff; background-color: yellow;">
-        <a href="index.html" style="text-decoration:none;">
-            <h1>
-                PokeWiki
-            </h1>
-        </a>
-    </div>
-
-    <form action="pokemon.html" method="get" style="text-align: center;">
-            <input type="text" name ="search" placeholder="Wyszukaj pokemona:" required style="border-radius: 5px; border: none; padding:0.5%">
-            <input type="submit" value="Szukaj!" style="border-radius: 5px; border: none; padding:0.5%;">
-    </form>
-
-    <div style="float: left;">
-        <img src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/103.png?raw=true" alt="Favourite pokemon" title="Author's favourite pokemon" width="300px">
+<body>
+    <div class="container_header">
+        <div class="logo">
+            <a class="logo_link" href="index.html">
+                <h1>
+                    Poke Wiki
+                </h1>
+            </a>
+        </div>
+        <div class="div_browse">
+            <form class="form_browse" action="pokemon.html" method="get">
+                    <input class="search_pokemon" type="text" name ="search" placeholder="Wyszukaj pokemona:" required>
+                    <input class="search_pokemon" type="submit" value="Szukaj!">
+            </form>
+        </div>
     </div>
     
-    <div style="float: left;">
-        <h4>Na naszej stronie mamy informacje o:</h4>
-        <ol>
-            <li>Pokemonach</li>
-            <li>Statystykach</li>
-            <li>Umiejętnościach</li>
-            <li>Ewolucjach</li>
-            <li>Typach</li>
-            <li>Gatunkach</li>
-            <li>Itemach</li>
-            <li>Dźwiękach</li>
-        </ol>
-    </div>
+    <div class="container_content">
+        <div class="box_pokemon_img">
+            <img class="pokemon_img_img" src="https://github.com/PokeAPI/sprites/blob/52427d467f3e3b22af3c9cefc807a7452196ccd7/sprites/pokemon/103.png?raw=true" alt="Favourite pokemon" title="Author's favourite pokemon">
+        </div>
+        
+        <div class="info_pokemon">
+            <div class="info_header">
+                <h4>Na naszej stronie mamy informacje o:</h4>
+            </div>
+            <div class="info_list">
+                <ol>
+                    <li>Pokemonach</li>
+                    <li>Statystykach</li>
+                    <li>Umiejętnościach</li>
+                    <li>Ewolucjach</li>
+                    <li>Typach</li>
+                    <li>Gatunkach</li>
+                    <li>Itemach</li>
+                    <li>Dźwiękach</li>
+                </ol>
+            </div>
 
-    <div style="clear: left;">
-        <a href="search.html">
-            <button style="background-color: #00c6f2; border-radius: 5px; border: none; padding:1%;">
-                Zobacz bazę pokemonów
-            </button>
-        </a>    
+            <div class="info_show_database">
+                <a href="search.html">
+                    <button class="database_button">
+                        Zobacz baze pokemonów
+                    </button>
+                </a>    
+            </div>
+        </div>
     </div>
 </body>
 </html>
