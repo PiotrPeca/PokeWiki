@@ -186,92 +186,130 @@ li {
 
     grid-gap: 10px;
 
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 .grid-header {
     grid-column: span 6;
     justify-self: center;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
-.grid-filters {
+.grid-filters-header {
     grid-column: span 6;
     justify-self: start;
-    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 17px;
+    /* border: 3px solid black; */
 }
 
-.grid-type {
-    border: 3px solid black;
+.grid-filter-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 17px;
+    color: white;
+    /* border: 3px solid black; */
 }
 
-.grid-species {
-    border: 3px solid black;
-}
-
-.grid-gender {
-    border: 3px solid black;
-}
-
-.grid-location {
-    border: 3px solid black;
+.grid-filter-field select {
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-size: 17px;
+    padding: 3%;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .grid-button {
     grid-column: span 2;
     justify-self: center;
-    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 3px solid black; */
 }
 
-.grid-img1 {
-    border: 3px solid black;
-}
+.grid-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
 
-.grid-img2 {
-    border: 3px solid black;
-}
+    background-image: url("../images/Pokemon_background_1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-.grid-img3 {
-    border: 3px solid black;
-}
-
-.grid-img4 {
-    border: 3px solid black;
-}
-
-.grid-img5 {
-    border: 3px solid black;
-}
-
-.grid-img6 {
-    border: 3px solid black;
-}
-
-.grid-img7 {
-    border: 3px solid black;
-}
-
-.grid-img8 {
-    border: 3px solid black;
-}
-
-.grid-img9 {
-    border: 3px solid black;
-}
-
-.grid-img10 {
-    border: 3px solid black;
-}
-
-.grid-img11 {
-    border: 3px solid black;
-}
-.grid-img12 {
-    border: 3px solid black;
+    border: 7px outset rgb(144, 190, 243);
+    border-radius: 15px;
 }
 
 .grid-footer {
     grid-column: span 6;
     justify-self: center;
-    border: 3px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 3px solid black; */
+}
+
+.img_search {
+    width: 200px;
+}
+
+.footer {
+    background-color: black; 
+    width: 300px; 
+    height: 50px; 
+    margin: auto
+}
+
+.footer-big-arrow {
+    background-color: yellow; 
+    width: 50px; 
+    height: 50px; 
+    float: left; 
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px; 
+    font-size: 35px;
+}
+
+.footer-small-arrow {
+    background-color: red; 
+    width: 50px; 
+    height: 50px; 
+    float: left; 
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px; 
+    font-size: 35px;
+}
+
+.page-number {
+    background-color: white; 
+    width: 100px; 
+    height: 50px; 
+    margin: auto; 
+    float: left; 
+    text-align: center; 
+    vertical-align: middle; 
+    line-height: 50px; 
+    font-size: 35px;
 }
